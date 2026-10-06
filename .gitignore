@@ -1,0 +1,106 @@
+# ==========================================
+# 1. NODE.JS & REACT / REACT NATIVE
+# ==========================================
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+node_modules/
+dist/
+build/
+*.tsbuildinfo
+.npm
+.eslintcache
+.stylelintcache
+.erb/compiled/
+
+# React Native / Metro / Expo
+.metro-health-check*
+android/app/build/
+ios/Pods/
+ios/DerivedData/
+*.ipa
+*.apk
+.expo/
+web-build/
+
+# ==========================================
+# 2. ANDROID / KOTLIN (Gradle)
+# ==========================================
+# Built application files
+*.apk
+*.apks
+*.aab
+*.dex
+*.class
+
+# Generated files
+bin/
+gen/
+out/
+.gradle/
+build/
+
+# Local configuration file (sdk.dir, etc.)
+local.properties
+
+# Eclipse files
+*.iml
+.classpath
+.project
+.settings/
+
+# IntelliJ IDEA / Android Studio
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+captures/
+.autotest
+
+# Keystore files
+*.jks
+*.keystore
+
+# ==========================================
+# 3. DART & FLUTTER
+# ==========================================
+# Flutter/Dart/Pub specifics
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+
+# Flutter web
+/.firebaserc
+.firebase/
+
+# Symbol files (iOS/Android)
+app.flx
+app.zip
+flutter_export_file.json
+
+# ==========================================
+# 4. GENERAL / SISTEMA OPERATIVO / IDEs
+# ==========================================
+# Editor directories and files
+.vscode/
+*.swp
+*.swo
+.vim
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
