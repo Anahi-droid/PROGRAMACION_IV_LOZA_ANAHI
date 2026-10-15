@@ -17,10 +17,10 @@ class Vegeta extends Saiyajin{
     }
 }
 
-const Saiyajin: Saiyajines[]=[
+const saiyajin: saiyajines[]=[
     new Rocky(),
     new Apollo()
 ]
 
 console.log(Saiyajin)
-Saiyajin.forEach(Saiyajines=>Saiyajines.tranformarse());
+saiyajin.forEach(Saiyajines=>Saiyajines.tranformarse());
