@@ -29,7 +29,8 @@ export function Paso3Suma() {
     )
   }
 
-  
+
+
 
   return (
     <View style={styles.contenedor}>
