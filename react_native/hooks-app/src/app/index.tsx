@@ -5,6 +5,10 @@ import { Paso2 } from './paso2'
 import { Paso3 } from './paso3'
 import { Paso3Suma} from './paso3Suma'
 import { Paso4 } from './paso4'
+import { Paso1 as Paso1MP } from "./paso1_mp"
+import { Paso2 as Paso2MP } from "./paso2_mp"
+import { Paso3 as Paso3MP } from "./paso3_mp"
+import { Paso4 as Paso4MP } from "./paso4_mp"
 
 // ┌──────────────────────────────────────────────────────────────────┐
 // │  Cambia este número y guarda (Ctrl+S) para navegar entre pasos. │
@@ -29,6 +33,14 @@ export default function Index() {
       return <Paso3Suma />
     case 5:
       return <Paso4 />
+    case 6:
+      return <Paso1MP />
+    case 7:
+      return <Paso2MP />
+    case 8:
+      return <Paso3MP />
+    case 9:
+      return <Paso4MP />
     default:
       return (
         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
