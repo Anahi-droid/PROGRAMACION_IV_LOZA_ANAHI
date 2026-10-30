@@ -1,4 +1,3 @@
-// app/index.tsx
 import { Text, View, StyleSheet } from 'react-native'
 import { Paso1 } from '@/components/paso1'
 import { Paso1Picapiedra } from '@/components/paso1Picapiedra'
@@ -7,18 +6,14 @@ import { Paso3 } from '@/components/paso3'
 import { Paso4 } from '@/components/paso4'
 import { Paso5 } from '@/components/paso5'
 import { Paso6 } from '@/components/paso6'
+import { Paso1MP } from '@/components/paso1_mp'
+import { Paso2MP } from '@/components/paso2_mp'
+import { Paso3MP } from '@/components/paso3_mp'
+import { Paso4MP } from '@/components/paso4_mp'
+import { Paso5MP } from '@/components/paso5_mp'
+import { Paso6MP } from '@/components/paso6_mp'
 
-// ┌──────────────────────────────────────────────────────────────────┐
-// │  Cambia este número y guarda (Ctrl+S) para navegar entre pasos. │
-// │  1  Paso 1  Flexbox — flexDirection, justify, align, gap        │
-// │  2  Paso 2  Unidades dp y la excepción del '%'                  │
-// │  3  Paso 3  Dimensions vs useWindowDimensions — grid responsivo │
-// │  4  Paso 4  Platform.OS y Platform.select — sombras             │
-// │  5  Paso 5  useColorScheme — tema claro/oscuro                  │
-// │  6  Paso 6  SafeAreaView y useSafeAreaInsets                    │
-// │  7  Paso 7  Dashboard responsivo combinado                      │
-// └──────────────────────────────────────────────────────────────────┘
-const PASO = 7
+const PASO = 8
 
 export default function Index() {
   switch (PASO) {
@@ -36,9 +31,18 @@ export default function Index() {
       return <Paso5 />
     case 7:
       return <Paso6 />
-
-
-
+    case 8:
+      return <Paso1MP />
+    case 9:
+      return <Paso2MP />
+    case 10:
+      return <Paso3MP />
+    case 11:
+      return <Paso4MP />
+    case 12:
+      return <Paso5MP />
+    case 13:
+      return <Paso6MP />
     default:
       return (
         <View style={estilos.centrado}>
@@ -48,8 +52,7 @@ export default function Index() {
   }
 }
 
-
 const estilos = StyleSheet.create({
   centrado: { flex: 1, justifyContent: 'center', alignItems: 'center' },
-  titulo:   { fontSize: 18, fontWeight: '600' },
+  titulo: { fontSize: 18, fontWeight: '600' },
 })
