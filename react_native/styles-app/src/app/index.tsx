@@ -13,7 +13,7 @@ import { Paso4MP } from '@/components/paso4_mp'
 import { Paso5MP } from '@/components/paso5_mp'
 import { Paso6MP } from '@/components/paso6_mp'
 
-const PASO = 8
+const PASO = 13
 
 export default function Index() {
   switch (PASO) {

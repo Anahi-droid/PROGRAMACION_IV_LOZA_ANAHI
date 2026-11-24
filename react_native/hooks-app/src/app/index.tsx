@@ -7,7 +7,7 @@ import { Paso4 } from './paso4'
 import { Paso1 as Paso1MP } from './paso1_mp'
 import { Paso2 as Paso2MP } from './paso2_mp'
 import { Paso3 as Paso3MP } from './paso3_mp'
-import { Paso4MP } from './paso4_mp'
+import { Paso4 as Paso4MP } from './paso4_mp'
 import Paso5 from './paso5'
 import Paso6 from './paso6'
 import Paso7 from './paso7'
@@ -19,7 +19,7 @@ import { Paso7MP } from './paso7_mp'
 import { Paso8MP } from './paso8_mp'
 import { TarjetaSistemaMP } from './paso8TarjetaServidor_mp'
 
-const PASO = 15
+const PASO = 19
 
 export default function Index() {
   switch (PASO) {

@@ -23,7 +23,7 @@ import { Paso6 as Paso6MP } from "./paso6_mp"
 // │  5  Paso 5  Modal de confirmación                               │
 // │  6  Paso 6  Pantalla completa — detalle de servidor             │
 // └──────────────────────────────────────────────────────────────────┘
-const PASO = 7
+const PASO = 12
 
 
 export default function Index() {

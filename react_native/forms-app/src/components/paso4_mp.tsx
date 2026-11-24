@@ -1,8 +1,8 @@
 import { SafeAreaView, SectionList, StyleSheet, Text } from 'react-native'
 import { Paso4EncabezadoSeccion } from './paso4EncabezadoSeccion'
-import { Paso1FilaEmpleado } from './paso1FilaEmpleado'
+import { Paso1FilaEmpleado } from './paso1filaEmpleado'
 import { Separador } from './paso3Separador'
-import { Empleado } from './paso1'
+import type { Empleado } from './paso1_mp'
 
 type SeccionDepartamento = {
   title: string

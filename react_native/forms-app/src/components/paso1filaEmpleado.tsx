@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View } from 'react-native'
-import type { Empleado } from './paso1'
+import type { Empleado } from './paso1_mp'
 
 export function Paso1FilaEmpleado({ empleado }: { empleado: Empleado }) {
   return (

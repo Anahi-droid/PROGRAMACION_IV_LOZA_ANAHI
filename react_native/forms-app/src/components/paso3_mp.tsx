@@ -1,7 +1,8 @@
 import { useCallback, useState } from 'react'
 import { ActivityIndicator, FlatList, SafeAreaView, StyleSheet, Text } from 'react-native'
-import { Empleado, EMPLEADOS } from './paso1'
-import { Paso1FilaEmpleado } from './paso1FilaEmpleado'
+import { EMPLEADOS } from './paso1_mp'
+import type { Empleado } from './paso1_mp'
+import { Paso1FilaEmpleado } from './paso1filaEmpleado'
 import { Separador } from './paso3Separador'
 import { ListaVacia } from './paso3ListaVacia'
 

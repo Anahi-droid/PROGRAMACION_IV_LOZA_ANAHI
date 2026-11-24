@@ -1,6 +1,7 @@
 import { FlatList, SafeAreaView, StyleSheet, Text } from 'react-native'
 import { Paso1FilaEmpleado } from './paso1filaEmpleado'
 
+
 export type Empleado = {
   id: string
   nombre: string

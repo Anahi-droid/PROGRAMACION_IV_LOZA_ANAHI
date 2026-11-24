@@ -1,5 +1,5 @@
 import { FlatList, SafeAreaView, StyleSheet, Text } from 'react-native'
-import { Paso2FilaCandidato } from './paso2FilaCandidato'
+import { Paso2FilaCandidato } from './paso2filaCandidato'
 
 export type Candidato = {
   id: string

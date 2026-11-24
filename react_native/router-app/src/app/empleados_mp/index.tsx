@@ -1,26 +1,6 @@
 import { FlatList, Pressable, StyleSheet, Text, View } from 'react-native'
 import { Link, router } from 'expo-router'
-
-export interface EmpleadoMP {
-  id: string
-  nombre: string
-  cargo: string
-  estado: 'activo' | 'vacaciones' | 'licencia'
-}
-
-export const EMPLEADOS_MP: EmpleadoMP[] = [
-  { id: '1', nombre: 'María Andrade', cargo: 'Analista de nómina', estado: 'activo' },
-  { id: '2', nombre: 'Carlos Quishpe', cargo: 'Coordinador de selección', estado: 'activo' },
-  { id: '3', nombre: 'Daniela Cevallos', cargo: 'Especialista en capacitación', estado: 'vacaciones' },
-  { id: '4', nombre: 'Jorge Naranjo', cargo: 'Analista de bienestar', estado: 'licencia' },
-  { id: '5', nombre: 'Paola Mena', cargo: 'Reclutadora', estado: 'activo' },
-]
-
-export const COLOR_ESTADO: Record<EmpleadoMP['estado'], string> = {
-  activo: '#2e7d32',
-  vacaciones: '#e65100',
-  licencia: '#c62828',
-}
+import { EMPLEADOS_MP, COLOR_ESTADO } from '../../data/empleados_mp'
 
 export default function ListaEmpleadosMP() {
   return (
@@ -32,7 +12,9 @@ export default function ListaEmpleadosMP() {
         renderItem={({ item }) => (
           <Pressable
             style={({ pressed }) => [styles.tarjeta, pressed && styles.tarjetaPresionada]}
-            onPress={() => router.push(`/empleados_mp/${item.id}`)}
+            onPress={() =>
+              router.push({ pathname: '/empleados_mp/[id]', params: { id: item.id } })
+            }
           >
             <View style={styles.fila}>
               <Text style={styles.nombre}>{item.nombre}</Text>
@@ -70,11 +52,7 @@ const styles = StyleSheet.create({
   fila: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
   nombre: { fontSize: 16, fontWeight: '600', color: '#1a1a1a' },
   cargo: { fontSize: 13, color: '#1565c0' },
-  badge: {
-    borderRadius: 4,
-    paddingHorizontal: 8,
-    paddingVertical: 3,
-  },
+  badge: { borderRadius: 4, paddingHorizontal: 8, paddingVertical: 3 },
   badgeTexto: { color: '#fff', fontSize: 11, fontWeight: '700' },
   enlaceDirecto: {
     textAlign: 'center',

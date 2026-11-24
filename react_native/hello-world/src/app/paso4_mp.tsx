@@ -135,4 +135,21 @@ const estilos4 = StyleSheet.create({
     color: '#78909c',
     width: 36,
   },
-  barraFondo: {
+    barraFondo: {
+    flex: 1,
+    height: 4,
+    backgroundColor: '#1c3548',
+    borderRadius: 2,
+    overflow: 'hidden',
+  },
+  barraRelleno: {
+    height: '100%',
+    borderRadius: 2,
+  },
+  barraPct: {
+    fontSize: 11,
+    fontWeight: '600',
+    width: 34,
+    textAlign: 'right',
+  },
+})

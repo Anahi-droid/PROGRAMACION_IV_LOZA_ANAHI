@@ -128,3 +128,45 @@ const estilos6 = StyleSheet.create({
     alignItems: 'center',
     paddingHorizontal: 20,
     paddingVertical: 14,
+    backgroundColor: '#ffffff',
+    borderBottomWidth: 1,
+    borderBottomColor: '#e0e0e0',
+  },
+  cabNombre: {
+    fontSize: 18,
+    fontWeight: '700',
+    color: '#1a1a1a',
+  },
+  cabCargo: {
+    fontSize: 12,
+    color: '#757575',
+    marginTop: 2,
+  },
+  scrollContenido: {
+    padding: 16,
+    gap: 12,
+    paddingBottom: 40,
+  },
+  gridAcciones: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: 10,
+  },
+  botonAccion: {
+    flexGrow: 1,
+    flexBasis: '45%',
+    paddingVertical: 12,
+    borderRadius: 8,
+    alignItems: 'center',
+  },
+  textoBotonAccion: {
+    color: '#ffffff',
+    fontSize: 14,
+    fontWeight: '600',
+  },
+  entradaLog: {
+    fontSize: 12,
+    color: '#455a64',
+    fontFamily: 'monospace',
+  },
+})
